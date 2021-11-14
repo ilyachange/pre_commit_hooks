@@ -2,6 +2,4 @@ name: pre_commit_hooks
 environment:
   sdk: '>=2.12.0 <3.0.0'
 executables: []
-dev_dependencies:
- import_sorter: any
 
