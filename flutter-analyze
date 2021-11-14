@@ -1,3 +1,9 @@
 #!/bin/sh
 eval "$(/opt/homebrew/bin/brew shellenv)" || true
-flutter analyze --no-fatal-infos --no-fatal-warnings | grep "error •"
+OUTPUT="$(flutter analyze --no-fatal-infos --no-fatal-warnings)"
+if grep -q "error •" <<< "$OUTPUT"; then
+    grep "error •" <<< "$OUTPUT"
+    exit 1
+else
+    exit 0
+fi
