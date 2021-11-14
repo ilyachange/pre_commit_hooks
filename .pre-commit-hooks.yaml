@@ -2,7 +2,7 @@
   name: Flutter Analyze
   language: dart
   types: [dart]
-  entry: flutter analyze --no-fatal-infos --no-fatal-warning
+  entry: flutter analyze --no-fatal-infos --no-fatal-warnings
 
 - id: flutter-format
   name: Flutter Format
