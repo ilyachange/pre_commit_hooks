@@ -1,18 +1,18 @@
 - id: flutter-analyze
   name: Flutter Analyze
-  language: system
+  language: script
   always_run: true
   pass_filenames: false
   entry: flutter-analyze
 
 - id: flutter-format
   name: Flutter Format
-  language: system
+  language: script
   files: \.dart$
   entry: flutter-format
 
 - id: flutter-import-sort
   name: Flutter Import Sort
-  language: system
+  language: script
   files: \.dart$
   entry: flutter-import-sort
