@@ -1,17 +1,18 @@
 - id: flutter-analyze
   name: Flutter Analyze
-  language: dart
-  types: [dart]
+  language: system
+  always_run: true
+  pass_filenames: false
   entry: flutter analyze --no-fatal-infos --no-fatal-warnings
 
 - id: flutter-format
   name: Flutter Format
-  language: dart
-  types: [dart]
+  language: system
+  files: \.dart$
   entry: flutter format -l 120
 
 - id: flutter-import-sort
   name: Flutter Import Sort
-  language: dart
-  types: [dart]
+  language: system
+  files: \.dart$
   entry: flutter pub run import_sorter:main --no-comments
